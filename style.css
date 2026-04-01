@@ -1,0 +1,140 @@
+/* الإعدادات العامة - روح الحضانة */
+:root {
+    --purple-main: #814299;    /* درجة البنفسجي من اللوجو */
+    --yellow-bright: #F6E92B;  /* درجة الأصفر من اللوجو */
+    --pink-soft: #E84E8F;      /* درجة الوردي من اللوجو */
+    --light-bg: #fdf7ff;       /* خلفية فاتحة مريحة */
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #fff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* الناف بار - شياكة واحترافية */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 10px 0;
+}
+
+.nav-link {
+    font-weight: 700;
+    color: var(--purple-main) !important;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--pink-soft) !important;
+}
+
+.btn-book {
+    background-color: var(--yellow-bright);
+    border-radius: 50px;
+    padding: 8px 25px !important;
+    box-shadow: 0 4px 10px rgba(246, 233, 43, 0.3);
+}
+
+/* الهيرو سكشن - أول حاجة تخطف العين */
+.hero-section {
+    background: linear-gradient(135deg, #814299 0%, #E84E8F 100%);
+    padding: 150px 0;
+    color: white;
+    clip-path: ellipse(150% 100% at 50% 0%); /* حركة "موجة" في التصميم */
+}
+
+.text-primary-color {
+    color: var(--yellow-bright);
+}
+
+.btn-primary-custom {
+    background-color: var(--yellow-bright);
+    color: var(--purple-main);
+    font-weight: 900;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    transition: 0.4s ease;
+}
+
+.btn-primary-custom:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: var(--pink-soft);
+}
+
+/* كروت المميزات - حركات الـ Hover */
+.feature-card {
+    background: white;
+    border-radius: 25px;
+    border-bottom: 5px solid var(--purple-main);
+    transition: 0.4s;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(129, 66, 153, 0.15);
+}
+
+.icon-box {
+    font-size: 50px;
+    background: #f0e6f5;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* زرار الواتساب الطاير */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    left: 30px; /* الشمال عشان مبيغطيش على الكلام العربي */
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float img {
+    width: 35px;
+    margin-top: 12px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* فورم الحجز */
+.card {
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+input, select {
+    border-radius: 10px !important;
+    padding: 12px !important;
+    border: 2px solid #eee !important;
+}
+
+input:focus, select:focus {
+    border-color: var(--purple-main) !important;
+    box-shadow: none !important;
+}
+
+/* المودال بتاع الـ QR */
+#qrcode img {
+    border: 10px solid white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}

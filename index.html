@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حضانة أولادنا | بيئة آمنة لطفلك</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.png" alt="لوجو حضانة أولادنا" width="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">مميزاتنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="activities.html">الأنشطة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="branches.html">فروعنا</a></li>
+                    <li class="nav-item"><a class="nav-link btn-book" href="#booking">سجل لطفلك</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section text-center">
+        <div class="container" data-aos="zoom-in">
+            <h1 class="display-3 fw-bold">حضانة <span class="text-primary-color">أولادنا</span></h1>
+            <p class="lead mt-3">تعليم ورعاية في بيئة آمنة.. تحت إشراف د/ منى عبد العزيز</p>
+            <div class="mt-4">
+                <a href="#booking" class="btn btn-primary-custom btn-lg">احجز موعد مقابلة الآن</a>
+                <a href="https://wa.me/201552358200" class="btn btn-whatsapp btn-lg mt-2 mt-md-0">تواصل واتساب</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-5" data-aos="fade-up">لماذا تختار "أولادنا"؟</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card p-4">
+                        <div class="icon-box mb-3">📸</div>
+                        <h4>كاميرات أونلاين</h4>
+                        <p>تابعي طفلك لحظة بلحظة من موبايلك طول اليوم.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card p-4">
+                        <div class="icon-box mb-3">🎓</div>
+                        <h4>متخصصون فقط</h4>
+                        <p>كل فريق العمل خريجي كليات تربية ورياض أطفال.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card p-4">
+                        <div class="icon-box mb-3">🚌</div>
+                        <h4>باصات توصيل</h4>
+                        <p>خدمة توصيل آمنة ومريحة لجميع المناطق المحيطة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center" data-aos="fade-right">
+                    <h2 class="mb-4">حجز موعد مقابلة (Interview)</h2>
+                    <div class="card shadow-lg border-0 p-4">
+                        <form id="bookingForm">
+                            <div class="mb-3 text-start">
+                                <label class="form-label">اسم الطفل</label>
+                                <input type="text" class="form-control" id="childName" required>
+                            </div>
+                            <div class="mb-3 text-start">
+    <label class="form-label">عمر الطفل (بالسنوات)</label>
+    <input type="number" class="form-control" id="childAge" min="1" max="6" placeholder="مثلاً: 3" required>
+</div>
+                            <div class="mb-3 text-start">
+                                <label class="form-label"> الفرع المطلوب الالتحاق به</label>
+                                <select class="form-select" id="branch" required>
+                                    <option value="إمبابة - عمر بن الخطاب">فرع عمر بن الخطاب (إمبابة)</option>
+                                    <option value="إمبابة - ش النصر">فرع ش النصر (إمبابة)</option>
+                                    <option value="بشتيل - ميدان العمارة">فرع بشتيل</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label class="form-label">اختار اليوم</label>
+                                <select class="form-select" id="interviewDay" required>
+                                    <option value="الإثنين">الإثنين</option>
+                                    <option value="الخميس">الخميس</option>
+                                </select>
+                            </div>
+<p class="text-danger fw-bold mb-3">
+ 📢 تنويه: يتم إجراء المقابلة (Interview)في الفرع الرئيسي فقط: 47 ش عمر بن الخطاب - أرض الجمعية - إمبابة
+ (امام بيم ماركت و فوق تساهيل)</p>
+                            <button type="submit" class="btn btn-primary-custom w-100">تأكيد الحجز واستلام الـ QR</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="qrModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-4">
+                <h3>تم تأكيد موعدك بنجاح! 🎉</h3>
+                <p id="appointmentDetails"></p>
+                <div id="qrcode" class="my-3 d-flex justify-content-center"></div>
+                <p class="text-muted small">خد سكرين شوت للكود ده ووريه للسكرتيرة عند الدخول</p>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+    <div class="alert alert-info fw-bold">
+        ⏰ تنويه: التواصل على الأرقام المتاحة خلال ساعات العمل فقط من 8 صباحاً إلى 5 مساءً
+    </div>
+</div>
+    <footer class="text-center py-3 mt-5" style="background-color:#111; color:#fff;">
+    <p class="mb-0">
+        © 2026 جميع الحقوق محفوظة  
+        <br>
+        تم إنشاء الموقع بواسطة <span style="color:#0d6efd; font-weight:bold;">BMC TEAM</span> من <span style="color:#0d6efd; font-weight:bold;">Ziad Ik</span>
+    </p>
+</footer>
+
+    <a href="https://wa.me/201552358200" class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
